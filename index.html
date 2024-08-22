@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,13 +12,40 @@
 </head>
 <body>
     <header class="header">
+        <nav class="header__nav">
+            <ul class="menu menu--principal">
+                <li class="menu__item">
+                    <a class="menu__link active" href="#home">
+                    <span class="menu__text">Home</span>
+                </a>
+            </li>
+            <li class="menu__item">
+                <a class="menu__link" href="#projetos">
+                <span class="menu__text">Projetos</span>
+            </a>
+        </li>
+        <li class="menu__item">
+            <a class="menu__link" href="#hsobre">
+            <span class="menu__text">Sobre</span>
+        </a>
+    </li>
+    <li class="menu__item">
+        <a class="menu__link" href="#contato">
+        <span class="menu__text">Contato</span>
+    </a>
+    </li>
+            </ul>
+        </nav>
+
         <div class="header__brand">
-            
             <img class="brand__logo" src="/assets/images/logoBranca.png" alt="Logo NS">
         </div>
-        <i id="toggleTheme" class="bi bi-sun"></i>
+        <div class="header__toggle">
+
+            <i id="toggleTheme" class="bi bi-sun"></i>
+        </div>
     </header>
-    <nav>
+    <nav class="nav--mobile">
         <ul class="menu menu--mobile">
             <li class="menu__item">
                 <a class="menu__link active" href="#home">
@@ -46,6 +73,67 @@
 </li>
         </ul>
     </nav>
-    <h1>Noeme Silva</h1>
+    <main>
+        <div class="main__content1">
+            <h1>Transformando <span class="destaque"><b>Ideias em Experiências&nbsp;</b></span>Digitais Incríveis</h1>
+            <p>Noeme Silva, Varginha-MG, Desenvolvedora Front-end.</p>
+            <ul class="menu menu--social">
+                <li>
+                   <a class="menu__link" href="">
+                    <i class="menu__icon bi bi-github"></i>
+                   </a>
+                </li>
+                <li>
+                   <a class="menu__link" href="">
+                    <i class="menu__icon bi bi-linkedin"></i>
+                   </a>
+                </li>
+                <li>
+                   <a class="menu__link" href="">
+                    <i class="menu__icon bi bi-instagram"></i>
+                   </a>
+                </li>
+            </ul>
+            <button class="btn btn--primary">
+                <span>Ver Projetos</span>
+                <i class="bi bi-arrow-down-right"></i>
+            </button>
+        </div>
+        <div class="main__content2">
+            <iframe src="https://www.youtube.com/embed/Ysi6eHv5cRQ?si=Ba9b8U2U_uJER0HL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </main>
+    <section class="skills">
+        <h2>Habilidade nas principais ferramentas tecnológicas</h2>
+        <ul class="skills__list">
+            <li class="skills__item">
+                <img class="skills__logo" src="/assets/images/angular_3.svg" alt="">
+            </li>
+            <li class="skills__item">
+                <img class="skills__logo" src="/assets/images/file-css_2.svg" alt="">
+            </li>
+            <li class="skills__item">
+                <img class="skills__logo" src="/assets/images/html_4.svg" alt="">
+            </li>
+            <li class="skills__item">
+                <img class="skills__logo" src="/assets/images/mysql_1.svg" alt="">
+            </li>
+            <li class="skills__item">
+                <img class="skills__logo" src="/assets/images/document-javascript_1.svg" alt="">
+            </li>
+            <li class="skills__item">
+                <img class="skills__logo" src="/assets/images/github_18.svg" alt="">
+            </li>
+            <li class="skills__item">
+                <img class="skills__logo" src="/assets/images/bootstrap_8.svg" alt="">
+            </li>
+        </ul>
+    </section>
+    <footer>
+        <p>
+            © 2024. Todos os Direitos Reservados. Noeme Silva. Desenvolvido por <a href="https://github.com/Noemesilva" target="_blank">NS.</a>
+        </p>
+    </footer>
+    <script src="/assets/js/scripts.js"></script>
 </body>
 </html>
